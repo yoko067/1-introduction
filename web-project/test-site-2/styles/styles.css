@@ -1,0 +1,65 @@
+p{
+    color: yellow;
+    font-size: 20px;
+    width: 800px;
+    background-color:  darkblue;
+    border:30px;
+}
+
+.special {
+    color: red;
+    font-size: 20px;
+    width: 800px;
+    background-color: green;
+    border: 30px;
+}
+
+p {
+    color: blue;
+    font-size: 20px;
+    width: 800px;
+    background-color: orange;
+    border: 30px;
+}
+
+.outer {
+    border: 5px solid black;
+}
+
+.box {
+    margin: 30px;
+    /* calc関数で計算(90% - 30pxの様な)することもできる */
+    width: 100px;
+    height: 100px;
+    /* backgraund-imageは背景画像を加えるプロパティ*/
+    background-color: rebeccapurple;
+    /* transformは要素に回転などの動きを加えるプロパティ */
+    transform: rotate(0.8turn);
+    color: rgb(255, 255, 255); /* white */
+}
+
+/* 別のCSSスタイルシートにインポート */
+@import "styles2.css";
+
+body {
+    background-color: pink;
+}
+/* メディアクエリーを作成するために使用 */
+@media (min-width: 30em) {
+body {
+    background-color: blue;
+}
+}
+
+/* スペース(Tab、改行を含む)の扱いについて
+・ブラウザーはCSS内のスペースを無視する
+・スペースが不適切だと読みにくい
+・CSS宣言ではスペースで値を区切るが、プロパティ名にスペースが含まれることは無い
+例.
+(正)
+margin: 0 auto;
+padding-left: 10px;
+(不)
+margin: 0auto;
+padding- left: 10px;
+*/
